@@ -1,4 +1,4 @@
-export const base_url = "http://localhost:5000";
+export const base_url = "https://wotech-server-2.onrender.com";
 export const isValidURL = (string) => {
   try {
     new URL(string);

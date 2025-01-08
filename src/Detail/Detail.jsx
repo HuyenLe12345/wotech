@@ -564,9 +564,9 @@ function Detail(props) {
                       <img
                         className="img-fluid w-100"
                         src={
-                          isValidURL(detail.img1)
-                            ? detail.img1
-                            : `${base_url}/${detail.img1}`
+                          isValidURL(value.img1)
+                            ? value.img1
+                            : `${base_url}/${value.img1}`
                         }
                         alt="..."
                       />

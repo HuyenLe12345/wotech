@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Chat.css";
-
+import { base_url } from "../../url.js";
 import ChatRoomsAPI from "../../API/ChatRoomsAPI";
 
 const io = require("socket.io-client");
-const socket = io("https://host-4k0h.onrender.com", {
+const socket = io(base_url, {
   transports: ["websocket"],
   withCredentials: true,
 });
